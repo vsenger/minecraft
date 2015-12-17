@@ -22,8 +22,18 @@ public class Computador {
     public static String WELCOME_TEXT = "Welcome to Surfing I.O.T Services ";
 
     static Runtime rt = Runtime.getRuntime();
+
     public static void main(String[] args) {
-        falar("Olá pessoal, bem-vindos ao coude for quides!",true);
+        falar("Olá pessoal, bem-vindos ao coude for quides!", true);
+        executar("gnome-screensaver-command -l");
+    }
+
+    public synchronized static void escreverNaTela(String texto) {
+        System.out.println(texto);
+    }
+
+    public synchronized static String lerTeclado() {
+        return "";
     }
     public synchronized static void falar(String texto, boolean esperar) {
         try {
@@ -44,4 +54,11 @@ public class Computador {
         }
     }
 
+    public synchronized static void executar(String comando) {
+        try {
+            Process pr1 = rt.exec(comando);
+        } catch (Exception ex) {
+            Logger.getLogger(Computador.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
 }
