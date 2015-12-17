@@ -9,6 +9,7 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.OutputStreamWriter;
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -18,6 +19,7 @@ import java.util.logging.Logger;
  */
 public class Computador {
 
+    public static Scanner teclado = new Scanner(System.in);
     public static String SPEAK_CMD = "espeak -p10 -k5 -s150 -v pt -f <filename>";
     public static String WELCOME_TEXT = "Welcome to Surfing I.O.T Services ";
 
@@ -32,8 +34,13 @@ public class Computador {
         System.out.println(texto);
     }
 
-    public synchronized static String lerTeclado() {
-        return "";
+    public synchronized static String lerTextoDoTeclado() {
+        return teclado.nextLine();
+        
+    }
+    public synchronized static int lerNumeroDoTeclado() {
+        return teclado.nextInt();
+        
     }
     public synchronized static void falar(String texto, boolean esperar) {
         try {
