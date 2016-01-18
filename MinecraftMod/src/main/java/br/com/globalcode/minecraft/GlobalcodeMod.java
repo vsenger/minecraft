@@ -16,7 +16,8 @@ import org.eclipse.paho.client.mqttv3.persist.MemoryPersistence;
 
 @Mod(modid = GlobalcodeMod.MODID, version = GlobalcodeMod.VERSION)
 public class GlobalcodeMod {
-
+    public static MqttClient client;
+    public static Control control;
     public static final String MODID = "examplemod";
     public static final String VERSION = "1.0";
 
@@ -31,15 +32,21 @@ public class GlobalcodeMod {
         MinecraftForge.EVENT_BUS.register(new Explosao());
         MinecraftForge.EVENT_BUS.register(new QuebrarBloco());
         MinecraftForge.EVENT_BUS.register(new Zumbis());
+        mqttInit();
 
     }
-
     public void mqttInit() {
         try {
-            MqttClient client = new MqttClient(
+            control= new Control();
+            System.out.println("Inicializando MQTT Connection!");
+            client = new MqttClient(
                     "tcp://iot.eclipse.org:1883", //URI
                     MqttClient.generateClientId(), //ClientId
                     new MemoryPersistence()); //Persistence*/
+            client.connect();
+            client.setCallback(control);
+            client.subscribe("globalcode/minecraft");
+            
         } catch (Exception e) {
         }
 

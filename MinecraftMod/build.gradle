@@ -1,5 +1,6 @@
 buildscript {
     repositories {
+        mavenLocal()
         mavenCentral()
         maven {
             name = "forge"
@@ -13,11 +14,17 @@ buildscript {
             name = "eclipse"
             url = "https://repo.eclipse.org/content/repositories/paho-releases/"
         }
+        maven {
+            name = "local"
+            url = "file:///home/globalcode/.m2"
+        }
+
     }
     dependencies {
         classpath 'net.minecraftforge.gradle:ForgeGradle:1.2-SNAPSHOT'
         classpath 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2'
-   
+        classpath 'br.com.globalcode:code4kids:1.0-SNAPSHOT'
+        classpath 'com.googlecode.json-simple:json-simple:1.1'
     }
 }
 
@@ -33,9 +40,33 @@ minecraft {
     version = "1.7.10-10.13.4.1614-1.7.10"
     runDir = "eclipse"
 }
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven {
+        name = "forge"
+        url = "http://files.minecraftforge.net/maven"
+    }
+    maven {
+        name = "sonatype"
+        url = "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+    maven {
+        name = "eclipse"
+        url = "https://repo.eclipse.org/content/repositories/paho-releases/"
+    }
+    maven {
+        name = "local"
+        url = "file:///home/globalcode/.m2"
+    }
 
+}
 dependencies {
+    compile 'br.com.globalcode:code4kids:1.0-SNAPSHOT'
+
     compile 'org.eclipse.paho:org.eclipse.paho.client.mqttv3:1.0.2'
+
+    compile 'com.googlecode.json-simple:json-simple:1.1'
     // you may put jars on which you depend on in ./libs
     // or you may define them like so..
     //compile "some.group:artifact:version:classifier"
