@@ -3,6 +3,9 @@ buildscript {
         mavenLocal()
         mavenCentral()
         maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
             name = "forge"
             url = "http://files.minecraftforge.net/maven"
         }

@@ -1,14 +1,41 @@
-[02:17:52] [main/INFO]: Setting user: Player255
-[02:18:18] [Client thread/INFO]: LWJGL Version: 2.9.1
-[02:20:59] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:examplemod
-[02:21:10] [Sound Library Loader/INFO]: Sound engine started
-[02:22:58] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
-[02:22:58] [Client thread/INFO]: Created: 16x16 textures/items-atlas
-[02:23:04] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:examplemod
-[02:23:09] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
-[02:23:11] [Client thread/INFO]: Created: 256x256 textures/items-atlas
-[02:23:12] [Sound Library Loader/INFO]: Sound engine started
-[02:23:36] [Client thread/ERROR]: ########## GL ERROR ##########
-[02:23:36] [Client thread/ERROR]: @ Post startup
-[02:23:36] [Client thread/ERROR]: 1286: Invalid framebuffer operation
-[02:24:14] [Client thread/INFO]: Stopping!
+[17:18:00] [main/INFO]: Setting user: Player359
+[17:18:03] [Client thread/INFO]: LWJGL Version: 2.9.1
+[17:18:18] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:examplemod
+[17:18:19] [Sound Library Loader/INFO]: Sound engine started
+[17:18:32] [Client thread/INFO]: Created: 16x16 textures/blocks-atlas
+[17:18:32] [Client thread/INFO]: Created: 16x16 textures/items-atlas
+[17:18:33] [Client thread/INFO]: Reloading ResourceManager: Default, FMLFileResourcePack:Forge Mod Loader, FMLFileResourcePack:Minecraft Forge, FMLFileResourcePack:examplemod
+[17:18:33] [Client thread/INFO]: Created: 512x256 textures/blocks-atlas
+[17:18:33] [Client thread/INFO]: Created: 256x256 textures/items-atlas
+[17:18:34] [Sound Library Loader/INFO]: Sound engine started
+[17:18:56] [Server thread/INFO]: Starting integrated minecraft server version 1.7.10
+[17:18:56] [Server thread/INFO]: Generating keypair
+[17:18:57] [Server thread/INFO]: Preparing start region for level 0
+[17:18:58] [Server thread/INFO]: Preparing spawn area: 46%
+[17:18:58] [Server thread/INFO]: Changing view distance to 8, from 10
+[17:19:00] [Server thread/INFO]: Player359[local:E:e6f2d6e0] logged in with entity id 369 at (-102.90135920247596, 68.0, 291.1180389346517)
+[17:19:00] [Server thread/INFO]: Player359 joined the game
+[17:19:01] [Server thread/INFO]: Saving and pausing game...
+[17:19:01] [Server thread/INFO]: Saving chunks for level 'Mundo dos Testes!'/Overworld
+[17:19:01] [Server thread/INFO]: Saving chunks for level 'Mundo dos Testes!'/Nether
+[17:19:01] [Server thread/INFO]: Saving chunks for level 'Mundo dos Testes!'/The End
+[17:19:06] [Server thread/INFO]: Saving and pausing game...
+[17:19:06] [Server thread/INFO]: Saving chunks for level 'Mundo dos Testes!'/Overworld
+[17:19:06] [Server thread/INFO]: Saving chunks for level 'Mundo dos Testes!'/Nether
+[17:19:06] [Server thread/INFO]: Saving chunks for level 'Mundo dos Testes!'/The End
+[17:19:13] [Client thread/INFO]: [CHAT] §6Vinicius quebrou um bloco!
+[17:19:17] [Client thread/INFO]: [CHAT] §6Vinicius quebrou um bloco!
+[17:19:19] [Client thread/INFO]: [CHAT] §6Vinicius quebrou um bloco!
+[17:19:21] [Client thread/INFO]: [CHAT] §6Vinicius quebrou um bloco!
+[17:19:23] [Client thread/INFO]: [CHAT] §6Vinicius quebrou um bloco!
+[17:19:24] [Client thread/INFO]: [CHAT] §6Vinicius quebrou um bloco!
+[17:19:26] [Client thread/INFO]: [CHAT] §6Vinicius quebrou um bloco!
+[17:19:31] [Client thread/INFO]: Stopping!
+[17:19:31] [Server thread/INFO]: Stopping server
+[17:19:31] [Server thread/INFO]: Saving players
+[17:19:31] [Server thread/INFO]: Saving worlds
+[17:19:31] [Server thread/INFO]: Saving chunks for level 'Mundo dos Testes!'/Overworld
+[17:19:31] [Server thread/INFO]: Saving chunks for level 'Mundo dos Testes!'/Nether
+[17:19:31] [Server thread/INFO]: Saving chunks for level 'Mundo dos Testes!'/The End
+[17:19:31] [Client Shutdown Thread/INFO]: Stopping server
+[17:19:31] [Client Shutdown Thread/INFO]: Saving players
